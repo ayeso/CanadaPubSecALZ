@@ -241,15 +241,15 @@
                         "privatelink.mysql.database.azure.com"
                     ]
                 },
-                {
-                    "privateLinkServiceNamespace": "Microsoft.DBforMySQL/flexibleServers",
+ 		        {
+                   "privateLinkServiceNamespace": "Microsoft.DBforMySQL/flexibleServers",
                     "zone": "privatelink.mysql.database.azure.com",
                     "filterLocationLike": "*",
                     "groupId": "mysqlServer",
                     "privateDnsZoneConfigs": [
                         "privatelink.mysql.database.azure.com"
                     ]
-                },
+                },                
                 {
                     "privateLinkServiceNamespace": "Microsoft.DBforMariaDB/servers",
                     "zone": "privatelink.mariadb.database.azure.com",
@@ -266,6 +266,15 @@
                     "groupId": "vault",
                     "privateDnsZoneConfigs": [
                         "privatelink.vaultcore.azure.net"
+                    ]
+                },
+                {
+                    "privateLinkServiceNamespace": "Microsoft.AppConfiguration/configurationStores",
+                    "zone": "privatelink.azconfig.io",
+                    "filterLocationLike": "*",
+                    "groupId": "configurationStores",
+                    "privateDnsZoneConfigs": [
+                        "privatelink.azconfig.io"
                     ]
                 },
                 {
@@ -406,6 +415,15 @@
                     ]
                 },
                 {
+                    "privateLinkServiceNamespace": "Microsoft.CognitiveServices/accounts",
+                    "zone": "privatelink.openai.azure.com",
+                    "filterLocationLike": "*",
+                    "groupId": "account",
+                    "privateDnsZoneConfigs": [
+                        "privatelink.openai.azure.com"
+                    ]
+                },
+                {
                     "privateLinkServiceNamespace": "Microsoft.StorageSync/storageSyncServices",
                     "zone": "privatelink.afs.azure.net",
                     "filterLocationLike": "*",
@@ -448,6 +466,15 @@
                     "groupId": "fhir",
                     "privateDnsZoneConfigs": [
                         "privatelink.azurehealthcareapis.com"
+                    ]
+                },
+                {   
+                    "privateLinkServiceNamespace": "Microsoft.ApiManagement/service",
+                    "zone": "privatelink.azure-api.net",
+                    "filterLocationLike": "*",
+                    "groupId": "gateway",
+                    "privateDnsZoneConfigs": [
+                        "privatelink.azure-api.net"
                     ]
                 }
             ]
